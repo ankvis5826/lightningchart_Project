@@ -37,7 +37,7 @@ function addDashboard() {
         }
 
         // If no dashboards exist, create the first one
-        if (count == null) {
+        if (count == null ||count == 0 ) {
             addDashboardOption('Dashboard 1', true); // Set first dashboard as active
             localStorage.setItem('DashboadCounts', 1); // Initialize count to 1 in localStorage
         } else {
