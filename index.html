@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lightningchart</title>
+
+    <!-- bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--  Project custom main css file -->
+    <link rel="stylesheet" href="Asset/Css/home.css">
+
+    <!-- Project custom responsive css file-->
+    <link rel="stylesheet" href="Asset/Css/responsive.css">
+
+    <!-- DevExtreme CSS -->
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/23.1.3/css/dx.light.css">
+
+    <!-- Jquary js -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- Dashboard container main -->
+    <div class="mainDashboardContainer">
+
+        <!-- This is for the nav bar section code -->
+        <nav class="navBarContainer">
+            
+            <!-- Nav bar left logo box side-->
+            <div class="navBarleftContainer sideLogsBoxs x">
+                <img src="Asset/Icons/home-light.svg" class="sideLogsBoxsLeft" alt="Home Button">
+            </div>
+            <!-- Nav bar center section -->
+            <div class="navBarMidContainer">
+                <div class="navBarMidLogoBox navBarMidBoxs">
+                    <div class="logoBox">
+                        <img src="Asset/Icons/Слой 2.svg" alt="Option icons">
+                    </div>
+                    <div class="logoBox">
+                        <img src="Asset/Icons/Group 3253.svg" alt="Option icons">
+                    </div>
+                    <div class="logoBox">
+                        <img src="Asset/Icons/Слой 2-1.svg" alt="Option icons">
+                    </div>
+                    <div class="logoBox">
+                        <img src="Asset/Icons/Group 1.svg" alt="Option icons">
+                    </div>
+                    <div class="logoBox">
+                        <img src="Asset/Icons/Group 3251.svg" alt="Option icons">
+                    </div>
+                    <div class="logoBox">
+                        <img src="Asset/Icons/Path 2146.svg" alt="Option icons">
+                    </div>
+                    <div class="logoBox">
+                        <img src="Asset/Icons/Group 3255.svg" alt="Option icons">
+                    </div>
+                </div>
+                <div class="navBarMidTextBox navBarMidBoxs">
+                    <span>The New DVP Project</span>
+                </div>
+                <div class="navBarMidMenuBox navBarMidBoxs">
+                    <div class="logoBox">
+                        <img src="Asset/Icons/turquoise-theme-icon.svg" alt="Option icons">
+                    </div>
+                    <div class="logoBox">
+                        <img src="Asset/Icons/Group 350.svg" alt="Option icons">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nav bar right logo box side-->
+            <div class="navBarRightContainer sideLogsBoxs">
+                <img src="Asset/Icons/Group 2152.png" class="sideLogsBoxsRight" alt="Home Button">
+            </div>
+        </nav>
+
+        <!-- This is for the main body one section code -->
+        <div class="mainBodyContainer">
+            
+            <!-- main body left bar -->
+            <div class="bodyLeftSection">
+                <div class="workingBodyLogoBox">
+                    <img src="Asset/Icons/Group 12.svg" class="logoType1" alt="Option icons">
+                </div>
+                <div class="workingBodyLogoBox">
+                    <img src="Asset/Icons/function-light.svg" class="logoType1" alt="Option icons">
+                </div>
+                <div class="workingBodyLogoBox">
+                    <img src="Asset/Icons/Group 14.svg" class="logoType1" alt="Option icons">
+                </div>
+                <div class="workingBodyLogoBox">
+                    <img src="Asset/Icons/Group 20.svg" class="logoType1" alt="Option icons">
+                </div>
+                <div class="workingBodyLogoBox">
+                    <img src="Asset/Icons/bin-icon.svg" class="logoType1" alt="Option icons">
+                </div>
+            </div>
+
+            <!-- Main body center section  -->
+            <div class="bodyMidSection">
+              
+                <!-- Main body setting Options -->
+                <div class="workingBodyContainer" id="ChartAreaBody">
+                    
+                    <div class="mainBodySettingContainer" id="MainBodySettingContainer">
+                        <img src="Asset/Icons/drag-panel-icon.svg" class="dragIcon" alt="">
+                        <div class="lconBox lconBoxDrop">
+                            <img src="Asset/Icons/Group 4913.svg" alt="">
+                        </div>
+                        <div class="lconBox">
+                            <img src="Asset/Icons/settings.svg" alt="">
+                        </div>
+                    </div>
+                    <canvas id="chartCanvas"></canvas>
+ 
+                     <div class="hideBtn" onclick="clearChart()"> <span> Clear Chart </span>  </div>
+
+                    <!-- Add Visual Section -->
+                    <div class="addVisualContainer"> 
+                        <div class="addVisualBtn" onclick="loadChart('radar')">
+                            <span> Add Visual</span>
+                        </div>
+                        <span class="addVisualText"> Add a Chart or other Visual </span>
+                    </div>
+
+                </div>
+
+                <!-- Main body footer -->
+                <div class="mainBodyFooter">
+                    <div class="dashboardOptionContainer" id="DashboardOptionContainer">
+                    </div>
+                    <div class="dashboardAddOptions">
+                        <abbr title="Add Dashboard">
+                            <img src="Asset/Icons/Group 2806.svg" alt="" onclick="addDashboard()">
+                        </abbr>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- main body right bar -->
+            <div class="bodyRightSection">
+                <div class="workingBodyLogoBox workingBodyRightLogoBox ">
+                    <img src="Asset/Icons/Group 3055.svg" class="logoType1" alt="Option icons">
+                </div>
+                <div class="workingBodyLogoBox workingBodyRightLogoBox workingBodyLogoBoxType2">
+                    <img src="Asset/Icons/Path 2367.svg" alt="" class="logoBoxOpenIcon">
+                    <img src="Asset/Icons/picChart.png" onclick="loadChart('pie')" class="logoType1" alt="Option icons">
+                </div>
+                <div class="workingBodyLogoBox workingBodyRightLogoBox workingBodyLogoBoxType2">
+                    <img src="Asset/Icons/Path 2367.svg" alt="" class="logoBoxOpenIcon">
+                    <img src="Asset/Icons/line-chart-light.svg"  onclick="loadChart('line')" class="logoType1" alt="Option icons">
+                </div>
+                <div class="workingBodyLogoBox workingBodyRightLogoBox workingBodyLogoBoxType2">
+                    <img src="Asset/Icons/Path 2367.svg" alt="" class="logoBoxOpenIcon">
+                    <img src="Asset/Icons/3D-surface-grid-chart.svg" class="logoType1" onclick="loadChart('bubble')" alt="Option icons">
+                </div>
+                <div class="workingBodyLogoBox workingBodyRightLogoBox workingBodyLogoBoxType2">
+                    <img src="Asset/Icons/Path 2367.svg" alt="" class="logoBoxOpenIcon">
+                    <img src="Asset/Icons/polar-line-chart-dark.svg" class="logoType1" onclick="loadChart('polarArea')"  alt="Option icons">
+                </div>
+                <div class="workingBodyLogoBox workingBodyRightLogoBox workingBodyLogoBoxType2">
+                    <img src="Asset/Icons/Path 2367.svg" alt="" class="logoBoxOpenIcon">
+                    <img src="Asset/Icons/dark-n-icon.svg" class="logoType1" onclick="loadChart('mixed')" alt="Option icons">
+                </div>
+                <div class="workingBodyLogoBox workingBodyRightLogoBox workingBodyLogoBoxType2">
+                    <img src="Asset/Icons/Path 2367.svg" alt="" class="logoBoxOpenIcon">
+                    <img src="Asset/Icons/data-grid-dark.svg" class="logoType1" alt="Option icons">
+                </div>
+                <div class="workingBodyLogoBox workingBodyRightLogoBox ">
+                    <img src="Asset/Icons/Group 3049.svg" class="logoType1" alt="Option icons">
+                </div>
+                <div class="workingBodyLogoBox workingBodyRightLogoBox ">
+                    <img src="Asset/Icons/Group 3053.svg" class="logoType1" alt="Option icons">
+                </div>
+                <div class="workingBodyLogoBox workingBodyRightLogoBox ">
+                    <img src="Asset/Icons/Group 402.svg" class="logoType1" alt="Option icons">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DevExtreme JS -->
+    <script src="https://cdn3.devexpress.com/jslib/23.1.3/js/jquery.min.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/23.1.3/js/jszip.min.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/23.1.3/js/dx.all.js"></script>
+
+    <!-- bootstrap scripts -->
+    <script src="Js/index.js"></script>
+</body>
+</html>

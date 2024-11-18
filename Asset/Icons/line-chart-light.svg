@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23.232" height="23.675" viewBox="0 0 23.232 23.675">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_620" data-name="Rectangle 620" width="23.232" height="23.675" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="line-chart-light" clip-path="url(#clip-path)">
+    <path id="Path_333" data-name="Path 333" d="M3.7,21.509a.592.592,0,0,1-.424-1L22.454.764a.592.592,0,0,1,.85.824L4.124,21.329a.589.589,0,0,1-.424.18" transform="translate(-0.656 -0.123)" fill="#fecc00"/>
+    <path id="Path_334" data-name="Path 334" d="M22.674,22.107H5.007A2.9,2.9,0,0,1,2.11,19.2L2.175.709l1.183,0L3.293,19.2a1.714,1.714,0,0,0,1.714,1.721H22.674Z" transform="translate(-0.446 -0.149)" fill="#fff"/>
+    <path id="Path_335" data-name="Path 335" d="M.592,4.406a.592.592,0,0,1-.525-.864L1.733.319A.594.594,0,0,1,2.249,0a.63.63,0,0,1,.526.3L4.545,3.456a.592.592,0,0,1-1.033.579L2.28,1.839,1.118,4.086a.592.592,0,0,1-.526.319" transform="translate(0 0)" fill="#fff"/>
+    <path id="Path_336" data-name="Path 336" d="M24.526,28.776a.592.592,0,0,1-.29-1.108l2.2-1.232-2.247-1.163a.592.592,0,0,1,.544-1.051l3.222,1.667a.591.591,0,0,1,.018,1.041L24.816,28.7a.592.592,0,0,1-.29.076" transform="translate(-5.039 -5.1)" fill="#fff"/>
+  </g>
+</svg>

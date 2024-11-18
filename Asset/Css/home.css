@@ -1,0 +1,308 @@
+/* Bassic and default css */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%
+}
+
+
+img{
+    cursor: pointer;
+}
+
+/* Outer / layout css */
+.mainDashboardContainer {
+    width: 100vw;
+    height: 100vh;
+    background: transparent linear-gradient(180deg, #01202B 0%, #000F16 100%) 0% 0% no-repeat padding-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/* For Navbar */
+
+.navBarContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: .2rem;
+}
+
+.sideLogsBoxs {
+    width: 3%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sideLogsBoxs:first-child {
+    margin-right: .2rem;
+    background: #005865 0% 0% no-repeat padding-box;
+}
+
+.navBarRightContainer {
+    background: #00343D 0% 0% no-repeat padding-box;
+}
+
+.navBarMidContainer {
+    width: calc(94% - .2rem);
+    background: #00343D 0% 0% no-repeat padding-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.sideLogsBoxs .sideLogsBoxsLeft {
+    width: 42%;
+    height: auto;
+}
+
+.sideLogsBoxs .sideLogsBoxsRight {
+    width: 59%;
+    height: auto;
+}
+
+.navBarMidBoxs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+
+}
+
+.logoBox {
+    height: 100%;
+    width: auto;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoBox img {
+    width: 41%;
+}
+
+.navBarMidMenuBox img {
+    width: 44.5%;
+}
+
+.navBarMidTextBox {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navBarMidTextBox span {
+    font-size: 1.6rem;
+    letter-spacing: 0px;
+    color: #39E7E8;
+}
+
+.mainBodyContainer {
+    flex: 1;
+    display: flex;
+
+}
+
+/* For main body */
+.bodyLeftSection,
+.bodyRightSection {
+    width: 3%;
+    height: 100%;
+    background: #00343D 0% 0% no-repeat padding-box;
+}
+
+.bodyLeftSection {
+    margin-right: .2rem;
+}
+
+.bodyMidSection {
+    width: calc(94% - .2rem);
+    background: transparent radial-gradient(closest-side at 50% 50%, #002630CC 0%, #001216F2 100%) 0% 0% no-repeat padding-box;
+}
+
+.workingBodyContainer {
+    width: 100%;
+    height: 95.5%;
+    position: relative;
+}
+
+.mainBodyFooter {
+    width: 100%;
+    height: 4.5%;
+    display: flex;
+}
+
+.circleDiv {
+    width: .6rem;
+    height: .6rem;
+    background-color: #DE5D23;
+    border-radius: 50%;
+}
+
+.dashboardOption {
+    display: flex;
+    align-items: center;
+    background: #00343D;
+    padding: 0px .9rem;
+    justify-content: space-evenly;
+    height: calc(100% - .2rem);
+    margin-right: .3rem;
+
+}
+
+.dashboardOption.activeDashboard {
+    height: 100%;
+    background: #005865;
+    font-weight: 700;
+}
+
+.dashboardOption span {
+    font-size: 1.6rem;
+    font-family: Segoe UI;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    padding: 0px .9rem;
+}
+
+.dashboardOption img {
+    width: .8rem;
+}
+
+.dashboardOptionContainer {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.dashboardAddOptions {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboardAddOptions img {
+    width: 1.2rem;
+}
+
+.bodyLeftSection,
+.bodyRightSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.workingBodyLogoBox {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.workingBodyLogoBox .logoType1 {
+    width: 40%;
+}
+
+.bodyRightSection .logoType1 {
+    width: 45%;
+}
+
+.workingBodyLogoBoxType2 {
+    position: relative;
+}
+
+.workingBodyLogoBoxType2 .logoBoxOpenIcon {
+    position: absolute;
+    left: 13%;
+    bottom: 10%;
+    width: .8rem;
+}
+
+.mainBodySettingContainer {
+    display: flex;
+    width: fit-content;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.mainBodySettingContainer .dragIcon{
+    width: .6rem;
+}
+.lconBox {
+    width: 2.8rem;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    background: #005865;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .6rem;
+}
+
+.lconBox img {
+    width: 45%;
+}
+
+.lconBoxDrop {
+    margin: 0px .4rem;
+}
+
+.addVisualContainer {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.addVisualContainer .addVisualBtn, .hideBtn {
+    padding: .4rem 1.7rem;
+    border-radius: 1.5rem;
+    background: #028FA4;
+    box-shadow: inset 0px 3px 30px #0097AF05;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.addVisualContainer .addVisualBtn span, .hideBtn span {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.addVisualContainer .addVisualText {
+    color: #00BAD5;
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+
+.dx-draggable{
+    left: 10px !important;
+}
+
+.chartCanvas{
+width: 100%;
+height: 100%;
+}
+
+.hideBtn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+}

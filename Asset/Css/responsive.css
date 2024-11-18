@@ -1,0 +1,171 @@
+/* handled for big screen */
+@media only screen and (min-width:1800px) {
+    html {
+        font-size: 66%
+    }
+}
+
+@media only screen and (min-width:2100px) {
+    html {
+        font-size: 72%
+    }
+}
+
+@media only screen and (min-width:2500px) {
+    html {
+        font-size: 80%
+    }
+}
+
+@media only screen and (min-width:3000px) {
+    html {
+        font-size: 86%
+    }
+}
+
+@media only screen and (min-width:3500px) {
+    html {
+        font-size: 100%
+    }
+}
+
+@media only screen and (min-width:4000px) {
+    html {
+        font-size: 120%
+    }
+}
+
+@media only screen and (min-width:5000px) {
+    html {
+        font-size: 135%
+    }
+}
+
+@media only screen and (min-width:6000px) {
+    html {
+        font-size: 155%
+    }
+}
+
+@media only screen and (min-width:7000px) {
+    html {
+        font-size: 185%
+    }
+}
+
+
+/* handled for Small screen */
+@media only screen and (max-width:1500px) {
+    .addVisualBtn {
+        background-color: rgb(0, 47, 255) !important;
+    }
+
+    html {
+        font-size: 61%
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .addVisualBtn {
+        background-color: red !important;
+    }
+
+    .bodyLeftSection,
+    .bodyRightSection {
+        width: 4.5%;
+    }
+
+    .sideLogsBoxs {
+        width: 4.5%;
+    }
+
+    .navBarMidContainer, .bodyMidSection{
+        width: calc(91% - .2rem);
+    }
+
+    html {
+        font-size: 58%
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .addVisualBtn {
+        background-color: rgb(255, 19, 235) !important;
+    }
+
+    .bodyLeftSection,
+    .bodyRightSection {
+        width: 5.5%;
+    }
+
+    .sideLogsBoxs {
+        width: 5.5%;
+    }
+
+    .navBarMidContainer, .bodyMidSection{
+        width: calc(89% - .2rem);
+    }
+
+    .navBarMidTextBox{
+        left: 55%;
+    }
+
+    html {
+        font-size: 45%
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .addVisualBtn {
+        background-color: rgb(19, 169, 255) !important;
+    }
+
+    .bodyLeftSection,
+    .bodyRightSection {
+        width: 6.5%;
+    }
+
+    .sideLogsBoxs {
+        width: 6.5%;
+    }
+
+    .navBarMidContainer, .bodyMidSection{
+        width: calc(87% - .2rem);
+    }
+
+    .navBarMidTextBox{
+        left: 60%;
+    }
+
+    html {
+        font-size: 40%
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .addVisualBtn {
+        background-color: rgb(19, 169, 255) !important;
+    }
+
+    .navBarMidTextBox{
+        left: 65%;
+    }
+
+    html {
+        font-size: 35%
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .addVisualBtn {
+        background-color: rgb(19, 169, 255) !important;
+    }
+
+    .navBarMidTextBox{
+        left: 70%;
+    }
+
+    html {
+        font-size: 30%
+    }
+}
